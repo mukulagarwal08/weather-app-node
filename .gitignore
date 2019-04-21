@@ -1,0 +1,2 @@
+# this directory includes all the files that we dont want git to track
+node_modules/
