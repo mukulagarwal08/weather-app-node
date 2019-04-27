@@ -5,6 +5,7 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 //DEFINE PATHS FOR EXPRESS
 const pathdir = path.join(__dirname,'../public')
@@ -85,6 +86,6 @@ app.get('*',(req,res)=>{    // '*' this is the wild card character that matches 
         name:"Mukul Agarwal"
     })
 })
-app.listen(3000,()=>{
-    console.log('server is running')
+app.listen(port,()=>{
+    console.log(`server is running on port ${port}`)
 })
