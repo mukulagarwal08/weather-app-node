@@ -24,7 +24,7 @@ weatherForm.addEventListener('submit', (e) => {
             }
             else {
                 msgone.textContent=data.location
-                msgtwo.textContent = data.summary+' It is '+ data.temperature +" degrees outside. The chance of rain is "+data.precProb+" percent"
+                msgtwo.textContent = data.summary+' It is '+ data.temperature +" degrees outside. The chance of rain is "+data.precProb+" percent.The temperature will range from "+data.templow+" to "+data.temphigh
             }
         })
     })
